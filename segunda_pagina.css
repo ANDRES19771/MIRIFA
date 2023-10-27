@@ -1,0 +1,183 @@
+html, body, .grid-container { height: 100%; margin: 0; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+  grid-template-rows: 0.1fr 0.5fr 3fr 0.2fr 0.2fr 0.2fr;
+  gap: 4px 0px;
+  background-image: url("fondosegundaoantalla.png");
+
+
+
+
+}
+
+.TITULO {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "LOGO TITULO1 numerosorteo"
+    "LOGO TITULO1 Numero"
+    ". . .";
+  grid-area: 2 / 2 / 3 / 4;
+
+
+
+  
+}
+
+
+label {
+  align-content: center;
+}
+
+
+
+.LOGO img {
+
+  max-width: 40%; /* La imagen no superará el ancho del contenedor */
+  height: auto; /* La altura se ajustará automáticamente */
+}
+
+
+.Numero_Sorteo { grid-area: numero de puesto; 
+
+font-style: unset;
+  color:#615c5c;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	border-radius: 2px;
+	background-color: rgba(255, 255, 255, 0.116);
+	backdrop-filter: blur(3px);
+
+  margin: 15px;
+	border-radius: 0px 10px 10px 15px;
+	border-style: double;
+
+
+
+
+}
+
+.Numero { grid-area: Numero; 
+  font-style: unset;
+  color:#afa6a6;
+  font-size: 23px;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	border-radius: 3px;
+	background-color: rgba(255, 255, 255, 0.116);
+	backdrop-filter: blur(3px);
+  margin: 15px;
+	border-radius: 0px 10px 10px 15px;
+	border-style: double;
+
+
+}
+
+.TITULO1 { grid-area: TITULO1;
+  color:#afa6a600;
+
+}
+
+.CUERPO { grid-area: 3 / 2 / 4 / 4; }
+
+.PREGUNTAS {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "PREGUNA1"
+    "PREGUNTA2"
+    "PREGUNTA3"
+    "PREGUNTA4"
+    "PREGUNTA5"
+    "PREGUNTA6"
+    "PREGUNTA7";
+  grid-area: 3 / 2 / 4 / 3;
+
+  width: 30rem;
+	height: 20rem;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	border-radius: 5px;
+
+	
+	backdrop-filter: blur(5px);
+
+
+
+}
+
+.PREGUNA1 { grid-area: PREGUNA1; }
+
+.PREGUNTA2 { grid-area: PREGUNTA2; }
+
+.PREGUNTA3 { grid-area: PREGUNTA3; }
+
+.PREGUNTA4 { grid-area: PREGUNTA4; }
+
+.PREGUNTA5 { grid-area: PREGUNTA5; }
+
+.PREGUNTA6 { grid-area: PREGUNTA6; }
+
+.PREGUNTA7 { grid-area: PREGUNTA7; }
+
+.RESPUESTAS {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "RESPUETA1"
+    "RESPUESTA2"
+    "RESPUESTA3"
+    "RESPUESTA4"
+    "RESPUESTA5"
+    "RESPUESTA6"
+    "RESPUESTA7";
+  grid-area: 3 / 3 / 4 / 4;
+
+
+  width: 30rem;
+	height: 20rem;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	border-radius: 5px;
+
+	
+	backdrop-filter: blur(5px);
+
+}
+
+.RESPUETA1 { grid-area: RESPUETA1; }
+
+.RESPUESTA2 { grid-area: RESPUESTA2; }
+
+.RESPUESTA3 { grid-area: RESPUESTA3; }
+
+.RESPUESTA4 { grid-area: RESPUESTA4; }
+
+.RESPUESTA5 { grid-area: RESPUESTA5; }
+
+.RESPUESTA6 { grid-area: RESPUESTA6; }
+
+.RESPUESTA7 { grid-area: RESPUESTA7; }
+
+.PARRAFO1 { grid-area: 4 / 2 / 5 / 4; }
+
+.PARRAFO2 { grid-area: 5 / 2 / 6 / 4; }
+
+
+/* For presentation only, no need to copy the code below */
+.grid-container * {
+ 
+  position: relative;
+}
+
+.grid-container *:after {
+  content:attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
