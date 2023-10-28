@@ -35,7 +35,7 @@ a:hover {
 
 }
 button{
-    width:50px;
+    width:80px;
     height:40px;
 
     background: linear-gradient(to left top, transparent 90%, #592cc3 50%,  #345c99 50%);
@@ -259,14 +259,10 @@ footer a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1px; /* Ajusta el espacio entre columnas */
+    grid-row-gap: 1px; /* Ajusta el espacio entre filas */
     grid-template-areas: 
-    .container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-row-gap: 1px; /* Ajusta el espacio entre filas */
-    }
       "TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1"
-      ". TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 ."
+      ". TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 ."
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
@@ -336,11 +332,7 @@ footer a {
     text-align: center; 
   }
   .TITULO2 { grid-area: TITULO2; }
-  name-label{
 
-    
-
-  }
 
 
   #identified {
