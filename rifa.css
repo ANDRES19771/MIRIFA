@@ -1,6 +1,6 @@
 body{
   height: 100%;
-  
+  background-image: url("logofondo.png");
   background-size: cover;
   background-size: 90rem;
   background-repeat: no-repeat;
@@ -347,7 +347,7 @@ footer a {
 
     text-align: center;
 
-    font-weight: 600;
+font-weight: 600;
     outline: none;
     cursor: pointer;
     position: relative;
