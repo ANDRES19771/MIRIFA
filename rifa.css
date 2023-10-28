@@ -18,7 +18,7 @@ body{
 }
 
 img {
-  width: 100%; /* Cambia este valor al tamaño que desees */
+  width: 80%; /* Cambia este valor al tamaño que desees */
   height: auto; /* Esto mantiene la proporción de la imagen */
 }
 a {
