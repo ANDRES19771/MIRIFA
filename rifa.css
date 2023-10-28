@@ -6,7 +6,8 @@ body{
   background-repeat: no-repeat;
   background-position: left top;
   background-attachment: fixed;
-
+  display: flex;
+  justify-content: space-between;
 
 }
 
@@ -35,8 +36,8 @@ a:hover {
 
 }
 button{
-    width:25px;
-    height:10px;
+    width:50px;
+    height:20px;
 
     background: linear-gradient(to left top, transparent 90%, #592cc3 50%,  #345c99 50%);
 
@@ -167,7 +168,7 @@ footer {
 }
 
 footer p {
-    margin: 10px 0;
+    margin: 1px 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida  Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 footer .fa-heart{
@@ -270,9 +271,15 @@ footer a {
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
       "PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO"; 
+
+
+      
   }
   .RIFA {
     display: grid; 
+
+
+    
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     gap: 0px 0px; 
@@ -289,6 +296,10 @@ footer a {
       ". . . . . . . . . ."; 
     grid-area: RIFA; 
   }
+
+
+
+  
   .N2 { grid-area: N2; }
   .N1 { grid-area: N1; }
   .N3 { grid-area: N3; }
