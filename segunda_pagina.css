@@ -1,11 +1,35 @@
 html, body, .grid-container { height: 100%; margin: 0; }
 
+body{
+  height: 100%;
+  
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
+   background-color: rgb(66, 64, 64);
+  align-content: center;
+  text-align: center;
+
+  width: 100%; /* Cambia este valor al tamaño que desees */
+  height: auto
+
+
+
+}
+
+img {
+  width: 100%; /* Cambia este valor al tamaño que desees */
+  height: auto; /* Esto mantiene la proporción de la imagen */
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
   grid-template-rows: 0.1fr 0.5fr 3fr 0.2fr 0.2fr 0.2fr;
   gap: 4px 0px;
-  background-image: url("fondosegundaoantalla.png");
+  color:#dddbdb;
 
 
 
@@ -45,7 +69,7 @@ label {
 .Numero_Sorteo { grid-area: numero de puesto; 
 
 font-style: unset;
-  color:#615c5c;
+  color:#d8cfcf;
   font-size: 23px;
 	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
 	border-radius: 2px;
@@ -63,7 +87,7 @@ font-style: unset;
 
 .Numero { grid-area: Numero; 
   font-style: unset;
-  color:#afa6a6;
+  color:#f0f0f0;
   font-size: 23px;
 	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
 	border-radius: 3px;
@@ -77,11 +101,22 @@ font-style: unset;
 }
 
 .TITULO1 { grid-area: TITULO1;
-  color:#afa6a600;
+  color:#ffffff00;
 
 }
 
-.CUERPO { grid-area: 3 / 2 / 4 / 4; }
+.CUERPO { grid-area: 3 / 2 / 4 / 4; 
+
+
+
+
+  
+
+
+
+
+
+}
 
 .PREGUNTAS {
   display: grid;
