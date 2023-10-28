@@ -256,15 +256,7 @@ footer a {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     gap: 0px 0px; 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1px; /* Ajusta el espacio entre columnas */
-    grid-row-gap: 1px; /* Ajusta el espacio entre filas */
-
-    align-content: center;
-
-    text-align: center;
-  
+   
     grid-template-areas: 
       "TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1"
       ". TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 ."
@@ -278,7 +270,7 @@ footer a {
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
-      "PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO "; 
+      "PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO"; 
 
 
       
@@ -343,4 +335,11 @@ footer a {
   #identified {
     color: rgb(222, 229, 231);
   }
+#TITULO1 {
 
+  
+  font-size: 30px;
+    color: rgb(222, 229, 231);
+    align-content: center;
+    text-align: center; 
+  }
