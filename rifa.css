@@ -35,7 +35,7 @@ a:hover {
 
 }
 button{
-    width:80px;
+    width:60px;
     height:40px;
 
     background: linear-gradient(to left top, transparent 90%, #592cc3 50%,  #345c99 50%);
@@ -260,6 +260,11 @@ footer a {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1px; /* Ajusta el espacio entre columnas */
     grid-row-gap: 1px; /* Ajusta el espacio entre filas */
+
+    align-content: center;
+
+    text-align: center;
+  
     grid-template-areas: 
       "TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1"
       ". TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 ."
@@ -273,7 +278,7 @@ footer a {
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
-      "PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO"; 
+      "PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO "; 
 
 
       
