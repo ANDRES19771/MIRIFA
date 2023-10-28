@@ -2,7 +2,7 @@ body{
   height: 100%;
   background-image: url("logofondo.png");
   background-size: cover;
-  background-size: 90rem;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: left top;
   background-attachment: fixed;
