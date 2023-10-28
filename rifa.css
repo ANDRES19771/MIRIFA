@@ -256,10 +256,13 @@ footer a {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     gap: 0px 0px; 
-   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1px; /* Ajusta el espacio entre columnas */
+    grid-row-gap: 1px; /* Ajusta el espacio entre filas */
     grid-template-areas: 
-      "TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1"
-      ". TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 ."
+      "TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 "
+      ". TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2  ."
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
@@ -270,9 +273,7 @@ footer a {
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
-      "PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO"; 
-
-
+      "PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO "; 
       
   }
   .RIFA {
