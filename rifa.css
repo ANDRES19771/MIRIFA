@@ -263,13 +263,14 @@ footer a {
 
 .container {
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     gap: 0px 0px; 
     
     grid-template-areas: 
       ".  TITULO1 TITULO1 TITULO1 TITULO1 TITULO1 TITULO1TITULO1 TITULO1 TITULO1 TITULO1   . "
       ". TITULO2 TITULO2 TITULO2 TITULO2 TITULO2 TITULO2  ."
+      ". RIFA RIFA RIFA RIFA RIFA ."
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
@@ -280,6 +281,16 @@ footer a {
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
       ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
+      ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
+      ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
+      ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
+      ". RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA RIFA ."
+
+
+
+
+
+
       ".  PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO PARRAFO ."; 
       
   }
@@ -288,12 +299,12 @@ footer a {
 
 
     
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
-      ". N1 N2 N3 N4 N5 N6 N7 N8 N9"
-      "N10 N11 N12 N13 N14 . . . . ."
+      ". N1 N2 N3 N4 N5"
+      "N6 N7 N8 . . . . ."
       ". . . . . . . . . ."
       ". . . . . . . . . ."
       ". . . . . . . . . ."
