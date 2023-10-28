@@ -322,9 +322,7 @@ footer a {
     font-family: 'Times New Roman', Times, serif;
     font-size: 17px;
     color: #f3efef00;
-    align-content: center;
-
-    text-align: center; 
+   
   }
   .TITULO2 { grid-area: TITULO2; }
 
