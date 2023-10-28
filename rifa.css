@@ -6,15 +6,19 @@ body{
   background-repeat: no-repeat;
   background-position: left top;
   background-attachment: fixed;
- 
-  background-color: black;
+   background-color: black;
   align-content: center;
-
   text-align: center;
+
+  width: 80%; /* Cambia este valor al tamaño que desees */
+  height: auto
+
+
+
 }
 
 img {
-  width: 30px; /* Cambia este valor al tamaño que desees */
+  width: 80%; /* Cambia este valor al tamaño que desees */
   height: auto; /* Esto mantiene la proporción de la imagen */
 }
 a {
