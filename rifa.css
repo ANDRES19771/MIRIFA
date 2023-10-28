@@ -330,7 +330,6 @@ footer a {
 
   #identified {
     color: rgb(222, 229, 231);
-    position: relative;
   }
 #TITULO1 {
 
@@ -339,5 +338,4 @@ footer a {
     color: rgb(222, 229, 231);
     align-content: center;
     text-align: center; 
-    position: relative;
   }
