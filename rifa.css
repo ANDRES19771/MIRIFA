@@ -14,7 +14,7 @@ body{
 }
 
 img {
-  width: 50%; /* Cambia este valor al tamaño que desees */
+  width: 30px; /* Cambia este valor al tamaño que desees */
   height: auto; /* Esto mantiene la proporción de la imagen */
 }
 a {
