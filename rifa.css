@@ -332,11 +332,12 @@ footer a {
 
   #identified {
     color: rgb(222, 229, 231);
+    position: relative;
   }
 #TITULO1 {
 
   
   font-size: 30px;
     color: rgb(222, 229, 231);
-   
+    position: relative;
   }
