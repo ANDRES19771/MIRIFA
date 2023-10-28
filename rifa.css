@@ -11,7 +11,10 @@ body{
   background-color: black;
 }
 
-
+img {
+  width: 100%; /* Cambia este valor al tamaño que desees */
+  height: auto; /* Esto mantiene la proporción de la imagen */
+}
 a {
   color: rgb(242, 242, 248); /* Cambia el color del texto a azul */
   text-decoration: none; /* Evita el subrayado predeterminado de los enlaces */
