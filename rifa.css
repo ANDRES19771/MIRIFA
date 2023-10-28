@@ -346,4 +346,12 @@ footer a {
     align-content: center;
 
     text-align: center;
+
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+
   }
