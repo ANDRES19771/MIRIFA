@@ -98,7 +98,7 @@ font-style: unset;
 
 .PREGUNTAS {
   display: grid;
-  display: flex;
+
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr ;
   gap: 0px 0px;
@@ -109,13 +109,12 @@ font-style: unset;
  ;
   grid-area: 3 / 2 / 4 / 3;
 
-  width: 800px;
+  width: 100%;
   height: 60px;
 	box-shadow: 0 0 1rem 0 rgba(192, 183, 183, 0.2);	
 	border-radius: 10px;
-  align-content: center;
-  text-align: center;
-margin-top: 3 px;
+ 
+margin-top: 10 px;
 
 }
 
@@ -159,6 +158,33 @@ text-align: center;}
 .PREGUNTA6 { grid-area: PREGUNTA6; }
 
 .PREGUNTA7 { grid-area: PREGUNTA7; }
+
+
+.contenedor {
+  max-width: 100%;
+margin-top: 72px;
+  text-align: center; /* Centra la imagen horizontalmente */
+
+
+
+
+
+
+
+
+}
+
+img {
+  width: 100%; /* Cambia el tamaño de la imagen al 100% del contenedor */
+  max-width: 1500px; /* Asegura que la imagen no se estire más allá de su tamaño original */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  margin-top: 20px; /* Añade espacio encima de la imagen */
+}
+
+
+
+
+
 
 .RESPUESTAS {
   display: grid;
