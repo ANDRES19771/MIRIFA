@@ -47,7 +47,7 @@ img {
     ". . .";
   grid-area: 2 / 2 / 3 / 4;
 
-
+  align-content: center;
 
   
 }
@@ -66,36 +66,31 @@ label {
 }
 
 
-.Numero_Sorteo { grid-area: numero de puesto; 
+#Numero_Sorteo { 
 
 font-style: unset;
   color:#d8cfcf;
   font-size: 23px;
 	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
-	border-radius: 2px;
-	background-color: rgba(255, 255, 255, 0.116);
+	border-radius: 3PX;
+	background-color: rgb(66, 64, 64);
 	backdrop-filter: blur(3px);
-
   margin: 15px;
 	border-radius: 0px 10px 10px 15px;
-	border-style: double;
-
-
-
+	
 
 }
 
-.Numero { grid-area: Numero; 
-  font-style: unset;
-  color:#f0f0f0;
+#Numero { 
+  color:#d8cfcf;
   font-size: 23px;
 	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
-	border-radius: 3px;
+	border-radius: 3PX;
 	background-color: rgba(255, 255, 255, 0.116);
 	backdrop-filter: blur(3px);
   margin: 15px;
 	border-radius: 0px 10px 10px 15px;
-	border-style: double;
+	
 
 
 }
@@ -109,7 +104,7 @@ font-style: unset;
 
 
 
-
+  background-position: left top;
   
 
 
