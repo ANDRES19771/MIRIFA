@@ -18,10 +18,15 @@
 </div>
   
       <div id="Numero_Sorteo">Numero  Sorteo       001</div>
-      <div  id="Numero">Numero     001</div>
+      <div  id="Numero">Numero     001
       
-    
-
+      <h1>Página 2</h1>
+      <script>
+          var parametros = new URLSearchParams(window.location.search);
+          var numero = parametros.get('numero');
+          document.write('El número recibido es: ' + numero);
+      </script>
+</div>
       <div class="grid-container">
       </div>
     </div>
