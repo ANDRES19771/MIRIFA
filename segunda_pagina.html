@@ -25,12 +25,23 @@
           document.write('EL NUMERO ELEGIDO: ' + numero);
       </script>
 </div>
+
+<div class="col-md-5">
+  <form id="my-google-sheet">
+      <div class="form-group">
+
+
+
       <div class="grid-container">
       </div>
     </div>
     
     </div>
-    <div class="PREGUNTAS">
+
+   
+
+
+     <div class="PREGUNTAS">
       <div class="PREGUNA1"> <input type="text" name="NOMBRE" placeholder="NOMBRE COMPLETO DEL PARTICIPANTE" required minlength="4" maxlength="8" size="40"  >     </div>
       <div class="PREGUNTA2"> <input type="tel" name="NUMEROTELEFONO" placeholder="NUMERO DE TELEFONO" required max="10" min="10" pattern="[0-9]{3}[0-9]{7}"></div>
       <div class="PREGUNTA3"></div>
@@ -80,34 +91,40 @@
 
 
 
+</form>
+<div class="form-group mb-5 text-center mt-5">
+  <button onclick="SendFormGoogleSheets()" class="btn btn-primary btn-sm">Enviar Formulario</button>
+</div>
+</div>
+
+<div class="col-md-5">
+<img src="assets/imgs/Google-Sheets-1.png" alt="" class="img-fluid">
+</div>
+</div>
+
+</div>
 
 
-
-
-
-    <script>
-        function regresar() {
-            window.close(); // Cierra la ventana actual
-        }
-    </script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="assets/js/material.min.js"></script>
+<script>
+function SendFormGoogleSheets (){
+$.ajax({
+  url:'https://script.google.com/macros/s/AKfycbwoerbJ9Y0a7mAybxunp4Cg47cVwKUiPHdHX_Vdoauf8pPw4UGo52oPwcGcSF7nSxCM/exec',
+  type:'post',
+  data:$("#my-google-sheet").serializeArray(),
+  success: function(){
+    alert("Registro exitoso")
+  },
+  error: function(){
+    alert("Error en el Registro :(")
+  }
+});
+}
+</script>
 </body>
 </html>
-
-
-
-
-
-<input type="submit" value="ENVIAR" id="submit">
-
-
-
-
-
-<h1>Segunda Página</h1>
-<button onclick="regresar()">Regresar a la Página Principal</button>
-
-
-
 
 
 
