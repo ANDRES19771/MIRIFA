@@ -184,7 +184,7 @@ img {
   width: 100%; /* Cambia el tamaño de la imagen al 100% del contenedor */
   max-width: 1500px; /* Asegura que la imagen no se estire más allá de su tamaño original */
   height: auto; /* Mantiene la proporción original de la imagen */
-  margin-top: 20px; /* Añade espacio encima de la imagen */
+  margin-top: 40px; /* Añade espacio encima de la imagen */
 }
 
 
