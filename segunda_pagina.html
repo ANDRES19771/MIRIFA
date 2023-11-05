@@ -25,6 +25,8 @@
           var parametros = new URLSearchParams(window.location.search);
           var numero = parametros.get('numero');
           document.write('EL NUMERO ELEGIDO: ' + numero);
+
+  
       </script>
 </div>
 
@@ -45,9 +47,13 @@
 
      <div class="PREGUNTAS">
       <div class="PREGUNA1"> <input type="text" name="NOMBRE" placeholder="NOMBRE COMPLETO DEL PARTICIPANTE" required minlength="4" maxlength="40" size="40"  >     </div>
-      <div class="PREGUNTA2"> <input type="tel" name="NUMEROTELEFONO" placeholder="NUMERO DE TELEFONO" required minlength="10" maxlength="10" pattern="[0-9]{3}[0-9]{7}"></div>
-      <div class="PREGUNTA3"></div>
-      <div class="PREGUNTA4"></div>
+      <div class="PREGUNTA2"> <input type="tel" name="NUMEROTELEFONO" placeholder="NUMERO DE TELEFONO" required minlength="10" maxlength="10" pattern="[0-9]{3}[0-9]{7}"> 
+        <input type="number" name="BOLETO" min ="0" max ="99" placeholder="NUM" required>
+        
+        
+      <label id="numeroajugar">favor confirmar el numero a jugar</label></div>
+      <div class="PREGUNTA3"> </div>
+      <div class="PREGUNTA4">  </div>
       <div class="PREGUNTA5"></div>
       <div class="PREGUNTA6"></div>
       <div class="PREGUNTA7"></div>
@@ -61,7 +67,7 @@
 
     <div class="RESPUESTAS">
       <div class="RESPUETA1">ESCIBE AQUI LOS 4 REFERIDOS RECUERDA QUE DEBEN ESTAR PAGOS PARA HACER ESFECTIVO TU PUESTO GRATIS, ENVIAR TIQUE DE PAGO POR NEQUI AL TELEFONO 3188638181</div>
-      <div class="RESPUESTA2"> <input type="text" name="NOMBRE REFERIDO 1" placeholder="NOMBRE REFERIDO 1" required >
+      <div class="RESPUESTA2"> <input type="text" name="REFERIDO1" placeholder="NOMBRE REFERIDO 1" required >
         <input type="text" name="NUMERO1" placeholder="NUMERO DE TELEFONO" minlength="10" maxlength="10" pattern="[0-9]{3}[0-9]{7}">
         <input type="number" name="BOLETO1" min ="0" max ="99" placeholder="NUM" required>
         <label for="tboleto1">N° boleto</label>
@@ -124,6 +130,8 @@ $.ajax({
   }
 });
 }
+
+
 </script>
 </body>
 </html>
