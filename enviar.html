@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario para enviar a Google Sheets</title>
+</head>
+<body>
+
+    <h1>Formulario para enviar a Google Sheets</h1>
+
+    <form action="https://script.google.com/macros/s/AKfycbwoerbJ9Y0a7mAybxunp4Cg47cVwKUiPHdHX_Vdoauf8pPw4UGo52oPwcGcSF7nSxCM/exec" method="post">
+        Variable: <input type="text" name="mi_variable"><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+
+
+    <script>
+        function doPost(e) {
+            // Obtener la variable de la petición POST
+            var miVariable = e.parameter.mi_variable; // Reemplaza "mi_variable" con el nombre del campo en tu formulario
+          
+            // Abrir la hoja de cálculo (reemplaza 'URL_DE_TU_HOJA' con la URL de tu hoja de cálculo)
+            var ss = SpreadsheetApp.openByUrl('https://script.google.com/macros/s/AKfycbwoerbJ9Y0a7mAybxunp4Cg47cVwKUiPHdHX_Vdoauf8pPw4UGo52oPwcGcSF7nSxCM/exec');
+            var hoja = ss.getSheets()[0]; // Esto obtiene la primera hoja
+          
+            // Insertar la variable en la hoja de cálculo
+            hoja.appendRow([FORM DATA]);
+          
+            // Responder con un mensaje de éxito
+            return ContentService.createTextOutput("Variable enviada a Google Sheets con éxito");
+          }
+        </script>
+
+
+
+</body>
+</html>
+
+
