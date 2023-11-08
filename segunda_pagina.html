@@ -106,7 +106,7 @@
 
   <a href="#" class="cta">
  
-    <button   type="submit"                onclick="SendFormGoogleSheets()" id="BOTON"   class="btn btn-primary btn-sm">
+    <button   onclick="SendFormGoogleSheets()" id="BOTON"   class="btn btn-primary btn-sm">
     
       <span>   ENVIAR</span>
       <svg width="13px" height="10px" viewBox="0 0 13 10">
@@ -115,22 +115,14 @@
     
       </svg>
     
-    
-    
-    
-    
-    
     </button>
 
    
-
-
-    
   </a>
 
 
 
-</form>
+
 
 
 
@@ -149,15 +141,19 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="assets/js/material.min.js"></script>
 
-
-
-<script>
-function SendFormGoogleSheets (){
+<Script>function SendFormGoogleSheets (){
   $("#my-google-sheet").submit(function(event) {
     // Prevenir el envío del formulario por defecto
     event.preventDefault();
     
-   
+    // Validar los campos del formulario
+    var nombre = $("#nombre").val(); // Reemplaza 'nombre' con el ID de tu campo de nombre
+    var email = $("#email").val(); // Reemplaza 'email' con el ID de tu campo de email
+
+    if(nombre === '' || email === ''){
+      alert("Por favor, completa todos los campos.");
+      return;
+    }
 
     // Si la validación es exitosa, enviar el formulario
     $.ajax({
@@ -168,28 +164,18 @@ function SendFormGoogleSheets (){
         alert("Registro exitoso")
       },
       error: function(){
-        alert("Error en el Registro :(")
+        alert("Error en el Registro")
+        
       }
     });
   });
 }
 
 
-</script>
+</Script>
+</form>
 
 
-
-
-
-
-
-
-
-
-
-
-
-</script>
 </body>
 </html>
 
