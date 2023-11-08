@@ -151,7 +151,7 @@
     var email = $("#email").val(); // Reemplaza 'email' con el ID de tu campo de email
 
     if(nombre === '' || email === ''){
-      alert("Por favor, completa todos los campos.");
+      alert("Por favor, completa todos los campos y verificar que los numeros de contacto esten bien escritos gracias.");
       return;
     }
 
@@ -161,7 +161,7 @@
       type:'post',
       data:$("#my-google-sheet").serializeArray(),
       success: function(){
-        alert("Registro exitoso")
+        alert("REGISTRO EXITOSO, TUS DATOS AN SIDO ENVIADOS A VALIDACION TE RECOMENDAMOS A REALIZAR EL PAGO POR TRASFIYA O NEQUI AL TELEFONO 3188638181 RECUENDA EN COMENTARIOS ENVIAR LA INFORMACION DE LOS NUMEROS DE PUESTOS PAGOS !GRACIAS Y BUENA SUERTE¡")
       },
       error: function(){
         alert("Error en el Registro")
