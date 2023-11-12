@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='segunda_pagina.css'>
+    <title>Segunda Página</title>
+   
+  </head>
+</head>
+<body>
+
+
+
+  <img src="MI RIFA (2).gif"Descripción de la imagen"> 
+
+
+
+
+</div>
+  
+      <div id="Numero_Sorteo">Numero  Sorteo       001</div>
+     
+</div>
+
+<div class="col-md-5">
+  <form id="my-google-sheet">
+      <div class="form-group">
+
+
+
+      <div class="grid-container">
+      </div>
+    </div>
+    
+    </div>
+
+   
+
+
+     <div class="PREGUNTAS">
+      <div class="PREGUNA1"> <input type="text" name="NOMBRE" placeholder="TU NOMBRE COMPLETO " required minlength="4" maxlength="40" size="40" required >     </div>
+      <div class="PREGUNTA2"> <input type="tel" name="NUMEROTELEFONO" placeholder="NUMERO DE TELEFONO" required minlength="10" maxlength="10" pattern="[0-9]{3}[0-9]{7}"  required> 
+       </div>
+      <div class="PREGUNTA3"> </div>
+      <div class="PREGUNTA4">  </div>
+      <div class="PREGUNTA5"></div>
+      <div class="PREGUNTA6"></div>
+      <div class="PREGUNTA7"></div>
+    </div>
+    <div class="contenedor">
+      <img src="mi rifa (4).gif" alt="Descripción de la imagen">
+  </div>
+   
+
+
+
+    <div class="RESPUESTAS">
+      <div class="RESPUETA1">ESCIBE AQUI LOS 4 REFERIDOS RECUERDA QUE DEBEN ESTAR PAGOS PARA HACER ESFECTIVO TU PUESTO GRATIS, ENVIAR TIQUE DE PAGO POR NEQUI AL TELEFONO 3188638181</div>
+      <div class="RESPUESTA2"> <input type="text" name="REFERIDO1" placeholder="NOMBRE REFERIDO 1"  >
+        <input type="text" name="NUMERO1" placeholder="NUMERO DE TELEFONO" minlength="10" maxlength="10" pattern="[0-9]{3}[0-9]{7}">
+        <input type="number" name="BOLETO1" min ="0" max ="99" placeholder="NUM">
+        <label for="tboleto1">N° boleto</label>
+      </div>
+      <div class="RESPUESTA3">
+        <input type="text" name="REFERIDO2" placeholder="NOMBRE REFERIDO 2"  >
+        <input type="text" name="NUMERO2" placeholder="NUMERO DE TELEFONO" minlength="10" maxlength="10" pattern="[0-9]{3}[0-9]{7}">
+        <input type="number" name="BOLETO2" min ="0" max ="99" placeholder="NUM" >
+        <label for="tboleto2">N° boleto</label>
+      </div>
+      <div class="RESPUESTA4">
+        <input type="text" name="REFERIDO3" placeholder="NOMBRE REFERIDO 3"  >
+        <input type="text" name="NUMERO3" placeholder="NUMERO DE TELEFONO"  minlength="10" maxlength="10" pattern="[0-9]{3}[0-9]{7}">
+        <input type="number" name="BOLETO3" min ="0" max ="99" placeholder="NUM" >
+        <label for="tboleto3">N° boleto</label>
+      </div>
+      <div class="RESPUESTA5">
+        <input type="text" name="REFERIDO4" placeholder="NOMBRE REFERIDO 4"  >
+        <input type="text" name="NUMERO4" placeholder="NUMERO DE TELEFONO"  minlength="10" maxlength="10" pattern="[0-9]{3}[0-9]{7}">
+        <input type="number" name="BOLETO4" min ="0" max ="99" placeholder="NUM" >
+        <label for="tboleto4">N° boleto</label>
+      </div>
+      <div class="RESPUESTA6"></div>
+      <div class="RESPUESTA7"></div>
+    
+    <div class="PARRAFO1"></div>
+    <div class="PARRAFO2"></div>
+  </div>
+
+
+
+
+<div class="form-group mb-5 text-center mt-5">
+
+  
+
+  <a href="#" class="cta">
+ 
+    <button   onclick="SendFormGoogleSheets()" id="BOTON"   class="btn btn-primary btn-sm">
+    
+      <span>   ENVIAR</span>
+      <svg width="13px" height="10px" viewBox="0 0 13 10">
+        <path d="M1,5 L11,5"></path>
+        <polyline points="8 1 12 5 8 9"></polyline>
+    
+      </svg>
+    
+    </button>
+
+   
+  </a>
+
+
+
+
+
+
+
+</div>
+</div>
+
+<div class="col-md-5">
+<img src="" alt="" class="img-fluid">
+</div>
+</div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="assets/js/material.min.js"></script>
+
+<Script>function SendFormGoogleSheets (){
+  $("#my-google-sheet").submit(function(event) {
+    // Prevenir el envío del formulario por defecto
+    event.preventDefault();
+    
+    // Validar los campos del formulario
+    var nombre = $("#nombre").val(); // Reemplaza 'nombre' con el ID de tu campo de nombre
+    var email = $("#email").val(); // Reemplaza 'email' con el ID de tu campo de email
+
+    if(nombre === '' || email === ''){
+      alert("Por favor, completa todos los campos y verificar que los numeros de contacto esten bien escritos gracias.");
+      return;
+    }
+
+    // Si la validación es exitosa, enviar el formulario
+    $.ajax({
+      url:'https://script.google.com/macros/s/AKfycbwoerbJ9Y0a7mAybxunp4Cg47cVwKUiPHdHX_Vdoauf8pPw4UGo52oPwcGcSF7nSxCM/exec',
+      type:'post',
+      data:$("#my-google-sheet").serializeArray(),
+      success: function(){
+        alert("REGISTRO EXITOSO, TUS DATOS AN SIDO ENVIADOS A VALIDACION TE RECOMENDAMOS A REALIZAR EL PAGO POR TRASFIYA O NEQUI AL TELEFONO 3188638181, RECUERDA EN COMENTARIOS DE NEQUI ENVIAR LA INFORMACION DE LOS NUMEROS DE PUESTOS PAGOS Y NOMBRE DE PARTICIPANTES !GRACIAS Y BUENA SUERTE¡")
+      },
+      error: function(){
+       alert("Error en el Registro")
+        
+      }
+    });
+  });
+}
+
+
+</Script>
+</form>
+
+
+</body>
+</html>
+
+
+
+
+
+
